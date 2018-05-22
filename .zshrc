@@ -103,3 +103,7 @@ export LC_ALL=$LANG
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias m='mycli -u root -proot'
+if command -v nvim; then
+  alias vim='nvim'
+  export EDITOR='nvim'
+fi
