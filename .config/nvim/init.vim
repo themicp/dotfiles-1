@@ -18,7 +18,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-tbone'
 call plug#end()
 
-colorscheme iceberg
+silent! colorscheme iceberg
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
