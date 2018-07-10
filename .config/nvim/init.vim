@@ -4,7 +4,10 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " colorscheme
-Plug 'cocopon/iceberg.vim'
+Plug 'tomasr/molokai', { 'commit': 'c67bdfcdb31415aa0ade7f8c003261700a885476' }
+
+" language support
+Plug 'leafgarland/typescript-vim'
 
 " automatically set tab options
 Plug 'tpope/vim-sleuth'
@@ -16,9 +19,16 @@ Plug 'w0rp/ale'
 Plug 'tpope/vim-apathy'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-tbone'
+
+" git
+Plug 'airblade/vim-gitgutter'
+Plug 'wincent/terminus' " focus reporting
+
+" airline
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
-silent! colorscheme iceberg
+silent! colorscheme molokai
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
@@ -41,10 +51,16 @@ cmap w!! w !sudo tee > /dev/null %
 
 set cinoptions=g2,h2
 
+set updatetime=100
+
 " ale
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
+let g:ale_fixers = {
+\	'typescript': ['tslint'],
+\}
 
 " fzf
 let g:fzf_buffers_jump = 1
