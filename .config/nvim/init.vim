@@ -9,6 +9,7 @@ Plug 'altercation/vim-colors-solarized'
 
 " language support
 Plug 'leafgarland/typescript-vim'
+Plug 'tomlion/vim-solidity'
 
 " automatically set tab options
 Plug 'tpope/vim-sleuth'
