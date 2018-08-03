@@ -5,6 +5,7 @@ Plug 'junegunn/fzf.vim'
 
 " colorscheme
 Plug 'tomasr/molokai', { 'commit': 'c67bdfcdb31415aa0ade7f8c003261700a885476' }
+Plug 'altercation/vim-colors-solarized'
 
 " language support
 Plug 'leafgarland/typescript-vim'
@@ -26,9 +27,12 @@ Plug 'wincent/terminus' " focus reporting
 
 " airline
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
-silent! colorscheme molokai
+syntax enable
+set background=dark
+silent! colorscheme solarized
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
