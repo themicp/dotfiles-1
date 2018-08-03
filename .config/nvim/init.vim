@@ -15,7 +15,7 @@ Plug 'tomlion/vim-solidity'
 Plug 'tpope/vim-sleuth'
 
 " linting
-Plug 'w0rp/ale'
+"Plug 'w0rp/ale'
 
 " tpope
 Plug 'tpope/vim-apathy'
