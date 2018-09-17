@@ -3,10 +3,6 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-" colorscheme
-Plug 'tomasr/molokai', { 'commit': 'c67bdfcdb31415aa0ade7f8c003261700a885476' }
-Plug 'altercation/vim-colors-solarized'
-
 " language support
 Plug 'leafgarland/typescript-vim'
 Plug 'tomlion/vim-solidity'
@@ -30,10 +26,6 @@ Plug 'wincent/terminus' " focus reporting
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
-
-syntax enable
-set background=dark
-silent! colorscheme solarized
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
