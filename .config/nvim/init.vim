@@ -16,16 +16,13 @@ Plug 'tpope/vim-sleuth'
 " tpope
 Plug 'tpope/vim-apathy'
 Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-tbone'
 
-" git
-Plug 'airblade/vim-gitgutter'
 Plug 'wincent/terminus' " focus reporting
 
-" airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'tomasr/molokai'
 call plug#end()
+
+colorscheme molokai
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
