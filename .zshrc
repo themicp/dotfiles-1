@@ -97,16 +97,9 @@ if command -v nvim >/dev/null 2>&1; then
   export EDITOR='nvim'
 fi
 
-if command -v node >/dev/null 2>&1; then
-  export NODE_NO_WARNINGS=1
-fi
-
-if command -v yarn >/dev/null 2>&1; then
-  export PATH="$PATH:$HOME/.yarn/bin"
-fi
-
-if command -v go >/dev/null 2>&1; then
-  export PATH="$PATH:$HOME/go/bin"
-fi
+command -v node >/dev/null 2>&1 && export NODE_NO_WARNINGS=1
+command -v yarn >/dev/null 2>&1 && export PATH="$PATH:$HOME/.yarn/bin"
+command -v go >/dev/null 2>&1 && export PATH="$PATH:$HOME/go/bin"
+[ -d $HOME/.prefix/usr/local/bin ] && export PATH="$PATH:$HOME/.prefix/usr/local/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
