@@ -65,9 +65,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-export PATH="$PATH:$HOME/.yarn/bin"
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 export LANGUAGE=$LANG
