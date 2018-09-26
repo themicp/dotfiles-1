@@ -99,6 +99,11 @@ fi
 
 command -v node >/dev/null 2>&1 && export NODE_NO_WARNINGS=1
 command -v yarn >/dev/null 2>&1 && export PATH="$PATH:$HOME/.yarn/bin"
+if command -v npm >/dev/null 2>&1; then
+  mkdir -p ~/.npm-global
+  export PATH="$PATH:$HOME/.npm-global/bin"
+  export NPM_CONFIG_PREFIX=~/.npm-global
+fi
 command -v go >/dev/null 2>&1 && export PATH="$PATH:$HOME/go/bin"
 [ -d $HOME/.prefix/usr/local/bin ] && export PATH="$PATH:$HOME/.prefix/usr/local/bin"
 
