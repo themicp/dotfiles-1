@@ -97,7 +97,6 @@ if command -v nvim >/dev/null 2>&1; then
   export EDITOR='nvim'
 fi
 
-command -v node >/dev/null 2>&1 && export NODE_NO_WARNINGS=1
 command -v yarn >/dev/null 2>&1 && export PATH="$PATH:$HOME/.yarn/bin"
 if command -v npm >/dev/null 2>&1; then
   mkdir -p ~/.npm-global
