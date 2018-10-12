@@ -61,6 +61,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
   gitfast
   vi-mode
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
