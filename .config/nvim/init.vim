@@ -20,6 +20,8 @@ Plug 'tpope/vim-sensible'
 Plug 'wincent/terminus' " focus reporting
 
 Plug 'tomasr/molokai'
+
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 colorscheme molokai
@@ -55,3 +57,6 @@ let g:ale_python_auto_pipenv = 1
 " fzf
 let g:fzf_buffers_jump = 1
 nnoremap <leader>f :GitFiles<cr>
+
+" nerdtree
+map <C-n> :NERDTreeToggle<CR>
