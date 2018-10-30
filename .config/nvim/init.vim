@@ -62,3 +62,9 @@ nnoremap <leader>f :GitFiles<cr>
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
+
+" spelling on latex
+augroup spell_check_latex
+    autocmd!
+    autocmd FileType tex set spell
+augroup END
