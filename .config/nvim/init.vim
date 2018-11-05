@@ -22,6 +22,8 @@ Plug 'wincent/terminus' " focus reporting
 Plug 'tomasr/molokai'
 
 Plug 'scrooloose/nerdtree'
+
+Plug 'lervag/vimtex'
 call plug#end()
 
 colorscheme molokai
@@ -63,8 +65,15 @@ nnoremap <leader>f :GitFiles<cr>
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
-" spelling on latex
 augroup spell_check_latex
     autocmd!
     autocmd FileType tex set spell
 augroup END
+
+augroup disable_ale_on_latex
+    autocmd!
+    autocmd FileType tex ALEDisable
+augroup END
+
+" vimtex
+let maplocalleader = "\\"
