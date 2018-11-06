@@ -49,6 +49,11 @@ nnoremap ? ?\v
 nnoremap n nzz
 nnoremap N Nzz
 
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
+
 cmap w!! w !sudo tee > /dev/null %
 
 set cinoptions=g2,h2
