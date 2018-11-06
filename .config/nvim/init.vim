@@ -23,7 +23,7 @@ Plug 'tomasr/molokai'
 
 Plug 'scrooloose/nerdtree'
 
-Plug 'lervag/vimtex'
+"Plug 'lervag/vimtex'
 call plug#end()
 
 colorscheme molokai
