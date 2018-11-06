@@ -38,6 +38,8 @@ iabbr @@ Kostis Karantias <kkarantias@gmail.com>
 set ignorecase
 set smartcase
 
+set cursorline
+
 nnoremap * *N
 vnoremap * y<esc>/\V<c-r>"<cr>N
 
