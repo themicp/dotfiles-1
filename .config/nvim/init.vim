@@ -31,6 +31,8 @@ colorscheme molokai
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
 
+nnoremap <leader>ge :e $MYVIMRC<cr>
+
 iabbr @@ Kostis Karantias <kkarantias@gmail.com>
 
 set ignorecase
