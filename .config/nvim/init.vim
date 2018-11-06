@@ -67,14 +67,15 @@ nnoremap <leader>f :GitFiles<cr>
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
-augroup spell_check_latex
-    autocmd!
-    autocmd FileType tex set spell
-augroup END
+function! SetupLatex()
+    ALEDisable
+    setl spell
+    setl linebreak
+endfunction
 
-augroup disable_ale_on_latex
+augroup tex_stuff
     autocmd!
-    autocmd FileType tex ALEDisable
+    autocmd FileType tex call SetupLatex()
 augroup END
 
 " vimtex
