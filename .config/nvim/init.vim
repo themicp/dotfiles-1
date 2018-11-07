@@ -22,8 +22,6 @@ Plug 'wincent/terminus' " focus reporting
 Plug 'tomasr/molokai'
 
 Plug 'scrooloose/nerdtree'
-
-"Plug 'lervag/vimtex'
 call plug#end()
 
 colorscheme molokai
@@ -88,6 +86,3 @@ augroup tex_stuff
     autocmd!
     autocmd FileType tex call SetupLatex()
 augroup END
-
-" vimtex
-let maplocalleader = "\\"
