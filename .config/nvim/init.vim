@@ -6,6 +6,7 @@ Plug 'w0rp/ale'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tomasr/molokai'
+Plug 'wincent/terminus'
 call plug#end()
 
 colorscheme molokai
