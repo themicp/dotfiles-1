@@ -88,24 +88,21 @@ tabspaces: 8
 font:
   # Normal (roman) font face
   normal:
-    family: Fira Code
-    # The `style` can be specified to pick a specific face.
-    # style: Regular
+    family: Noto Sans Mono
+    style: Light
 
   # Bold font face
   bold:
-    family: Fira Code
-    # The `style` can be specified to pick a specific face.
-    # style: Bold
+    family: Noto Sans Mono
+    style: Regular
 
   # Italic font face
   italic:
-    family: Fira Code
-    # The `style` can be specified to pick a specific face.
-    # style: Italic
+    family: Noto Sans Mono
+    style: Italic
 
   # Point size
-  size: 8.0
+  size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
