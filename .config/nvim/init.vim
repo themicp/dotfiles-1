@@ -72,10 +72,16 @@ function! SetupLatex()
     setl spell
     setl linebreak
 
+    " TODO: should write a function to exchange two keys instead of doing this
+    " manually
     nnoremap <buffer> j gj
     nnoremap <buffer> k gk
+    nnoremap <buffer> 0 g0
+    nnoremap <buffer> $ g$
     nnoremap <buffer> gj j
     nnoremap <buffer> gk k
+    nnoremap <buffer> g0 0
+    nnoremap <buffer> g$ $
 endfunction
 
 augroup tex_stuff
