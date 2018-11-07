@@ -1,27 +1,11 @@
 call plug#begin()
-" fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-
-" language support
-"Plug 'leafgarland/typescript-vim'
 Plug 'tomlion/vim-solidity'
-
-" automatically set tab options
-Plug 'tpope/vim-sleuth'
-
-" linting
 Plug 'w0rp/ale'
-
-" tpope
-Plug 'tpope/vim-apathy'
 Plug 'tpope/vim-sensible'
-
-Plug 'wincent/terminus' " focus reporting
-
+Plug 'tpope/vim-sleuth'
 Plug 'tomasr/molokai'
-
-Plug 'scrooloose/nerdtree'
 call plug#end()
 
 colorscheme molokai
@@ -49,8 +33,6 @@ cmap w!! w !sudo tee > /dev/null %
 
 set cinoptions=g2,h2
 
-set updatetime=100
-
 " ale
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
@@ -61,9 +43,6 @@ let g:ale_fix_on_save = 1
 " fzf
 let g:fzf_buffers_jump = 1
 nnoremap <leader>f :GitFiles<cr>
-
-" nerdtree
-map <C-n> :NERDTreeToggle<CR>
 
 function! SetupLatex()
     ALEDisable
