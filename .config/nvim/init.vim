@@ -47,11 +47,6 @@ nnoremap ? ?\v
 nnoremap n nzz
 nnoremap N Nzz
 
-nnoremap j gj
-nnoremap k gk
-nnoremap gj j
-nnoremap gk k
-
 cmap w!! w !sudo tee > /dev/null %
 
 set cinoptions=g2,h2
@@ -76,6 +71,11 @@ function! SetupLatex()
     ALEDisable
     setl spell
     setl linebreak
+
+    nnoremap <buffer> j gj
+    nnoremap <buffer> k gk
+    nnoremap <buffer> gj j
+    nnoremap <buffer> gk k
 endfunction
 
 augroup tex_stuff
