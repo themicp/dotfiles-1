@@ -65,4 +65,5 @@ endfunction
 augroup tex_stuff
     autocmd!
     autocmd FileType tex call SetupLatex()
+    autocmd FileType plaintex setl ft=tex
 augroup END
