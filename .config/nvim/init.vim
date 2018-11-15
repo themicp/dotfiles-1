@@ -9,7 +9,7 @@ Plug 'tomasr/molokai'
 Plug 'wincent/terminus'
 call plug#end()
 
-let g:rehash256 = 1
+set termguicolors
 colorscheme molokai
 
 let mapleader = ","
