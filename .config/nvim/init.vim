@@ -12,6 +12,7 @@ call plug#end()
 
 set bg=dark
 colorscheme solarized
+hi Normal guibg=NONE ctermbg=NONE
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
