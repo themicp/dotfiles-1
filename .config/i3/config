@@ -181,6 +181,10 @@ bindsym XF86AudioMicMute exec amixer set Capture toggle # mute mic
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
+# screenshots
+bindsym Print exec "scrot -q 100 ${HOME}'/Pictures/%Y-%m-%d-%H-%M-%S_$wx$h.png'"
+bindsym Shift+Print exec "sleep 0.4; scrot -q 100 -s ${HOME}'/Pictures/%Y-%m-%d-%H-%M-%S_$wx$h.png'"
+
 exec xrdb -merge $HOME/.Xresources
 exec --no-startup-id nm-applet
 exec --no-startup-id setxkbmap -option 'grp:alt_shift_toggle,ctrl:nocaps' 'us,gr'
