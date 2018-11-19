@@ -7,10 +7,11 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tomasr/molokai'
 Plug 'wincent/terminus'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
-set termguicolors
-colorscheme molokai
+set bg=dark
+colorscheme solarized
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
