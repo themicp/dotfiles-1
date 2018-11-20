@@ -63,6 +63,7 @@ function! SetupLatex()
     nnoremap <buffer> gk k
     nnoremap <buffer> g0 0
     nnoremap <buffer> g$ $
+    nnoremap <cr> :!(cd $(git rev-parse --show-toplevel) && make)<cr>
 endfunction
 
 augroup tex_stuff
