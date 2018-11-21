@@ -71,3 +71,5 @@ augroup tex_stuff
     autocmd FileType tex call SetupLatex()
     autocmd FileType plaintex setl ft=tex
 augroup END
+
+au FileType python let b:ale_linters = []
