@@ -10,7 +10,7 @@ audioKeys = [
 extraKeys = audioKeys
 
 main = xmonad $ desktopConfig
-    { terminal    = "alacritty"
+    { terminal    = "urxvt"
     , modMask     = mod4Mask
     , borderWidth = 3
     } `additionalKeysP` extraKeys
