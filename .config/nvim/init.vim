@@ -41,7 +41,6 @@ set cinoptions=g2,h2
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:ale_python_auto_pipenv = 1
-let g:ale_fixers = {'javascript': ['prettier']}
 let g:ale_fix_on_save = 1
 
 " fzf
@@ -73,3 +72,6 @@ augroup tex_stuff
 augroup END
 
 au FileType python let b:ale_linters = []
+au FileType haskell let b:ale_fixers = ['brittany']
+au FileType haskell let b:ale_linters = ['stack_ghc', 'hlint']
+au FileType javascript let b:ale_fixers = ['prettier']
