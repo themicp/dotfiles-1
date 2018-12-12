@@ -72,4 +72,5 @@ augroup END
 au FileType python let b:ale_linters = []
 au FileType haskell let b:ale_fixers = ['brittany']
 au FileType haskell let b:ale_linters = ['stack_ghc', 'hlint']
-au FileType javascript let b:ale_fixers = ['prettier']
+"au FileType javascript let b:ale_fixers = ['prettier']
+au FileType javascript let b:ale_linters = ['flow']
