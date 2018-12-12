@@ -10,9 +10,7 @@ Plug 'wincent/terminus'
 Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
-set bg=dark
-colorscheme solarized
-hi Normal guibg=NONE ctermbg=NONE
+colorscheme molokai
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
