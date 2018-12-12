@@ -105,6 +105,6 @@ if command -v npm >/dev/null 2>&1; then
   export NPM_CONFIG_PREFIX=~/.npm-global
 fi
 command -v go >/dev/null 2>&1 && export PATH="$PATH:$HOME/go/bin"
-[ -d $HOME/.prefix/usr/local/bin ] && export PATH="$PATH:$HOME/.prefix/usr/local/bin"
+[ -d $HOME/.local/bin/ ] && export PATH="$PATH:$HOME/.local/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
