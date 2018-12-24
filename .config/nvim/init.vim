@@ -1,6 +1,7 @@
 call plug#begin()
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'leafgarland/typescript-vim'
 Plug 'tomlion/vim-solidity'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-sensible'
