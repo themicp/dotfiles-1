@@ -172,18 +172,18 @@ bar {
 exec_always --no-startup-id feh --bg-fill ~/Downloads/nitish-meena-37745-unsplash.jpg
 
 # audio controls
-bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ #increase sound volume
-bindsym XF86AudioLowerVolume exec amixer set Master 5%- #decrease sound volume
-bindsym XF86AudioMute exec amixer set Master 1+ toggle # mute sound
-bindsym XF86AudioMicMute exec amixer set Capture toggle # mute mic
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # screen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 # screenshots
-bindsym Print exec "scrot -q 100 ${HOME}'/Pictures/%Y-%m-%d-%H-%M-%S_$wx$h.png'"
-bindsym Shift+Print exec "sleep 0.4; scrot -q 100 -s ${HOME}'/Pictures/%Y-%m-%d-%H-%M-%S_$wx$h.png'"
+bindsym Print exec --no-startup-id "scrot -q 100 ${HOME}'/Pictures/%Y-%m-%d-%H-%M-%S_$wx$h.png'"
+bindsym Shift+Print exec --no-startup-id "sleep 0.4; scrot -q 100 -s ${HOME}'/Pictures/%Y-%m-%d-%H-%M-%S_$wx$h.png'"
 
 exec xrdb -merge $HOME/.Xresources
 exec --no-startup-id redshift
