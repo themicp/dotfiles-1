@@ -11,7 +11,9 @@ Plug 'wincent/terminus'
 Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
-colorscheme molokai
+syntax enable
+set background=light
+colorscheme solarized
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
