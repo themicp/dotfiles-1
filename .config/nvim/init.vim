@@ -72,7 +72,7 @@ augroup tex_stuff
     autocmd FileType plaintex setl ft=tex
 augroup END
 
-au FileType python let b:ale_linters = []
+au FileType python let b:ale_linters = ['mypy']
 au FileType haskell let b:ale_fixers = ['hfmt']
 au FileType haskell let b:ale_linters = ['stack_ghc', 'hlint']
 "au FileType javascript let b:ale_fixers = ['prettier']
