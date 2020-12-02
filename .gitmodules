@@ -1,0 +1,21 @@
+[submodule "neovim/.local/share/nvim/site/pack/molokai"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/molokai
+	url = https://github.com/tomasr/molokai
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/fzf"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/fzf.vim"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/ale"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/ale
+	url = https://github.com/dense-analysis/ale
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-sensible"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-sleuth"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/terminus"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/terminus
+	url = https://github.com/wincent/terminus

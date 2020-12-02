@@ -1,19 +1,6 @@
-call plug#begin()
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'leafgarland/typescript-vim'
-Plug 'tomlion/vim-solidity'
-Plug 'w0rp/ale'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-sleuth'
-Plug 'tomasr/molokai'
-Plug 'wincent/terminus'
-Plug 'altercation/vim-colors-solarized'
-call plug#end()
-
 syntax enable
 set background=light
-colorscheme solarized
+colorscheme molokai
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
