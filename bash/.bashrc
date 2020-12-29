@@ -28,22 +28,23 @@ shopt -s no_empty_cmd_completion
 # Enable history appending instead of overwriting when exiting.  #139609
 shopt -s histappend
 
-# Save each command to the history file as it's executed.  #517342
-# This does mean sessions get interleaved when reading later on, but this
-# way the history is always up to date.  History is not synced across live
-# sessions though; that is what `history -n` does.
-# Disabled by default due to concerns related to system recovery when $HOME
-# is under duress, or lives somewhere flaky (like NFS).  Constantly syncing
-# the history will halt the shell prompt until it's finished.
-#PROMPT_COMMAND='history -a'
+PROMPT_COMMAND=__prompt_command_fishlike
 
-PS1='\[\033]0;\u@\h:\w\007\]'
+__prompt_command_fishlike() {
+	local exitCode="$?"
+	PS1=""
 
-if [[ ${EUID} == 0 ]] ; then
-	PS1+='\[\033[01;31m\]\h\[\033[01;34m\] \w\$\[\033[00m\] '
-else
-	PS1+='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\$\[\033[00m\] '
-fi
+	local Reset='\[\e[0m\]'
+	local Red='\[\e[0;31m\]'
+	local BoldRed='\[\e[1;31m\]'
+	local Green='\[\e[0;32m\]'
+
+	PS1+="${Green}\u${Reset}@\h ${Green}\w${Reset}"
+	if [ $exitCode != 0 ]; then
+		PS1+=" ${BoldRed}[${exitCode}]${Reset}"
+	fi
+	PS1+="> ${Reset}"
+}
 
 export CLICOLOR=1 # ls colors on macOS
 alias grep='grep --colour=auto'
