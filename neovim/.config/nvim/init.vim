@@ -12,6 +12,9 @@ iabbr @@ Kostis Karantias <kkarantias@gmail.com>
 set ignorecase
 set smartcase
 
+nnoremap ; :
+vnoremap ; :
+
 nnoremap * *N
 vnoremap * y<esc>/\V<c-r>"<cr>N
 
