@@ -61,3 +61,7 @@ set -o vi
 export PROMPT_DIRTRIM=3
 export EDITOR=nvim
 alias vim=nvim
+
+PATH="/usr/local/sbin:$PATH"
+PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH
