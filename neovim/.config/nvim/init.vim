@@ -1,6 +1,6 @@
 syntax enable
-set background=light
-colorscheme molokai
+colorscheme lucius
+LuciusBlack
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
