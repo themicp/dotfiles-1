@@ -22,3 +22,6 @@
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/typescript-vim"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-jsx-pretty"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty
