@@ -32,6 +32,9 @@ PROMPT_COMMAND=__prompt_command_fishlike
 
 __prompt_command_fishlike() {
 	local exitCode="$?"
+	local gitHash=$(git rev-parse HEAD 2>/dev/null|head -c8)
+	local gitBranch=$(git symbolic-ref --short -q HEAD 2>/dev/null)
+	local gitShow=$([ ! -z "${gitBranch}" ] && echo "${gitBranch}" || echo "${gitHash}")
 	PS1=""
 
 	local Reset='\[\e[0m\]'
@@ -40,6 +43,9 @@ __prompt_command_fishlike() {
 	local Green='\[\e[0;32m\]'
 
 	PS1+="${Green}\u${Reset}@\h ${Green}\w${Reset}"
+	if [ ! -z "${gitShow}" ]; then
+		PS1+=" (${gitShow})"
+	fi
 	if [ $exitCode != 0 ]; then
 		PS1+=" ${BoldRed}[${exitCode}]${Reset}"
 	fi
