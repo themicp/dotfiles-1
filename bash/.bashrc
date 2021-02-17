@@ -32,7 +32,7 @@ PROMPT_COMMAND=__prompt_command_fishlike
 
 __prompt_command_fishlike() {
 	local exitCode="$?"
-	local gitHash=$(git rev-parse HEAD 2>/dev/null|head -c8)
+	local gitHash=$(git rev-parse HEAD 2>/dev/null|head -8)
 	local gitBranch=$(git symbolic-ref --short -q HEAD 2>/dev/null)
 	local gitShow=$([ ! -z "${gitBranch}" ] && echo "${gitBranch}" || echo "${gitHash}")
 	PS1=""
