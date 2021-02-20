@@ -59,8 +59,12 @@ alias fgrep='fgrep --colour=auto'
 
 set -o vi
 export PROMPT_DIRTRIM=3
-export EDITOR=nvim
-alias vim=nvim
+which vim >/dev/null && EDITOR=vim
+which nvim >/dev/null && {
+	alias vim=nvim
+	EDITOR=nvim
+}
+export EDITOR
 
 PATH="/usr/local/sbin:$PATH"
 PATH="/usr/local/opt/ruby/bin:$PATH"
