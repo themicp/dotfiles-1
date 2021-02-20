@@ -65,3 +65,6 @@ alias vim=nvim
 PATH="/usr/local/sbin:$PATH"
 PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH
+
+test -d /Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/ && \
+	export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/
