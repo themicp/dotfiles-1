@@ -57,6 +57,11 @@ alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
 
+PATH="/usr/local/sbin:$PATH"
+PATH="/opt/local/bin:$PATH"
+PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH
+
 set -o vi
 export PROMPT_DIRTRIM=3
 which vim >/dev/null && EDITOR=vim
@@ -65,10 +70,6 @@ which nvim >/dev/null && {
 	EDITOR=nvim
 }
 export EDITOR
-
-PATH="/usr/local/sbin:$PATH"
-PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH
 
 test -d /Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/ && \
 	export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/
