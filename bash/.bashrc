@@ -70,6 +70,3 @@ which nvim >/dev/null && {
 	EDITOR=nvim
 }
 export EDITOR
-
-test -d /Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/ && \
-	export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/
