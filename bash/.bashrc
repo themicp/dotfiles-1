@@ -70,3 +70,5 @@ which nvim >/dev/null && {
 	EDITOR=nvim
 }
 export EDITOR
+
+which direnv >/dev/null && eval "$(direnv hook bash)"
