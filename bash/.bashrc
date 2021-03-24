@@ -57,6 +57,9 @@ alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
 
+PATH="$HOME/.config/yarn/global/node_modules/.bin/:$PATH"
+PATH="$HOME/go/bin:$PATH"
+PATH="$HOME/.bin:$PATH"
 PATH="/usr/local/sbin:$PATH"
 PATH="/opt/local/bin:$PATH"
 PATH="/usr/local/opt/ruby/bin:$PATH"
