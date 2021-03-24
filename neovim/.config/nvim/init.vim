@@ -28,18 +28,11 @@ cmap w!! w !sudo tee > /dev/null %
 
 set cinoptions=g2,h2
 
-" ale
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
-let g:ale_python_auto_pipenv = 1
-let g:ale_fix_on_save = 1
-
 " fzf
 let g:fzf_buffers_jump = 1
 nnoremap <leader>f :GitFiles<cr>
 
 function! SetupLatex()
-    ALEDisable
     setl spell
     setl linebreak
 
@@ -62,6 +55,5 @@ augroup tex_stuff
     autocmd FileType plaintex setl ft=tex
 augroup END
 
-au FileType python let b:ale_linters = ['mypy']
-au FileType haskell let b:ale_fixers = ['hfmt']
-au FileType haskell let b:ale_linters = ['stack_ghc', 'hlint']
+let g:coc_global_extensions = ['coc-go', 'coc-git']
+source ~/.config/nvim/coc-necessities.vim

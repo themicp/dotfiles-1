@@ -7,9 +7,6 @@
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/fzf.vim"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
-[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/ale"]
-	path = neovim/.local/share/nvim/site/pack/shapeshed/start/ale
-	url = https://github.com/dense-analysis/ale
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-sensible"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible
@@ -31,3 +28,7 @@
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-solidity"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-solidity
 	url = https://github.com/tomlion/vim-solidity
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/coc.nvim"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+	branch = release
