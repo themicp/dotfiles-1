@@ -1,13 +1,12 @@
+set termguicolors
 syntax enable
-
-colorscheme molokai
+colorscheme tender
+set number
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
 
 nnoremap <leader>ge :e $MYVIMRC<cr>
-
-iabbr @@ Kostis Karantias <kkarantias@gmail.com>
 
 set ignorecase
 set smartcase
@@ -27,10 +26,6 @@ nnoremap N Nzz
 cmap w!! w !sudo tee > /dev/null %
 
 set cinoptions=g2,h2
-
-" fzf
-let g:fzf_buffers_jump = 1
-nnoremap <leader>f :GitFiles<cr>
 
 function! SetupLatex()
     setl spell
@@ -55,5 +50,6 @@ augroup tex_stuff
     autocmd FileType plaintex setl ft=tex
 augroup END
 
-let g:coc_global_extensions = ['coc-go', 'coc-git']
+let g:airline_powerline_fonts = 1
+let g:coc_global_extensions = ['coc-go', 'coc-git', 'coc-json']
 source ~/.config/nvim/coc-necessities.vim

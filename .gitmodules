@@ -1,12 +1,6 @@
 [submodule "neovim/.local/share/nvim/site/pack/molokai"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/molokai
 	url = https://github.com/tomasr/molokai
-[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/fzf"]
-	path = neovim/.local/share/nvim/site/pack/shapeshed/start/fzf
-	url = https://github.com/junegunn/fzf
-[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/fzf.vim"]
-	path = neovim/.local/share/nvim/site/pack/shapeshed/start/fzf.vim
-	url = https://github.com/junegunn/fzf.vim
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-sensible"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible
@@ -32,3 +26,15 @@
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
 	branch = release
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/tender.vim"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/tender.vim
+	url = https://github.com/jacoborus/tender.vim
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-airline"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-airline-themes"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/ctrlp.vim"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
