@@ -52,4 +52,5 @@ augroup END
 
 let g:airline_powerline_fonts = 1
 let g:coc_global_extensions = ['coc-go', 'coc-git', 'coc-json']
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 source ~/.config/nvim/coc-necessities.vim
