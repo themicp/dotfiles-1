@@ -1,6 +1,6 @@
 set termguicolors
 syntax enable
-colorscheme molokai
+colorscheme xcodedarkhc
 set number
 
 let mapleader = ","
