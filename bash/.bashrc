@@ -27,6 +27,10 @@ shopt -s no_empty_cmd_completion
 
 # Enable history appending instead of overwriting when exiting.  #139609
 shopt -s histappend
+# TODO: practically infinity, I haven't fully evaluated what exactly these parameters do
+# but I'm not leaving them unset as suggested on th internet to note break other applications
+export HISTFILESIZE=340282366920938463463374607431768211456
+export HISTSIZE=340282366920938463463374607431768211456
 
 PROMPT_COMMAND=__prompt_command_fishlike
 
