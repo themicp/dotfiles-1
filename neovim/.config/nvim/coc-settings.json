@@ -1,3 +1,4 @@
 {
-	"coc.preferences.currentFunctionSymbolAutoUpdate": true
+	"coc.preferences.currentFunctionSymbolAutoUpdate": true,
+	"coc.preferences.formatOnSaveFiletypes": ["go"]
 }
