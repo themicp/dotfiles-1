@@ -2,6 +2,7 @@ set termguicolors
 syntax enable
 colorscheme xcodedarkhc
 set number
+set cursorline
 
 let mapleader = ","
 nnoremap <leader><space> :noh<cr>
