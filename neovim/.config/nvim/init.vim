@@ -1,6 +1,6 @@
 set termguicolors
 syntax enable
-colorscheme tender
+colorscheme molokai
 set number
 
 let mapleader = ","
