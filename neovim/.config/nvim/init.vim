@@ -51,7 +51,7 @@ augroup tex_stuff
 augroup END
 
 let g:airline_powerline_fonts = 1
-let g:coc_global_extensions = ['coc-go', 'coc-git', 'coc-json']
+let g:coc_global_extensions = ['coc-go', 'coc-git', 'coc-json', 'coc-tsserver']
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 source ~/.config/nvim/coc-necessities.vim
