@@ -32,7 +32,7 @@ shopt -s histappend
 export HISTFILESIZE=340282366920938463463374607431768211456
 export HISTSIZE=340282366920938463463374607431768211456
 
-PROMPT_COMMAND=__prompt_command_fishlike
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND;}__prompt_command_fishlike"
 
 __prompt_command_fishlike() {
 	local exitCode="$?"
@@ -79,3 +79,4 @@ which nvim >/dev/null && {
 export EDITOR
 
 which direnv >/dev/null && eval "$(direnv hook bash)"
+[ -f /opt/local/etc/profile.d/autojump.sh ] && . /opt/local/etc/profile.d/autojump.sh
