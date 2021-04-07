@@ -1,0 +1,4 @@
+/neovim/.config/nvim/*
+!/neovim/.config/nvim/init.vim
+/neovim/.local/share/nvim/*
+!/neovim/.local/share/nvim/site

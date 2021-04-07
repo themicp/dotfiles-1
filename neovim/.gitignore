@@ -1,4 +1,0 @@
-/.config/nvim/*
-!/.config/nvim/init.vim
-/.local/share/nvim/*
-!/.local/share/nvim/site
