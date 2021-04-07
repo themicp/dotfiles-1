@@ -1,2 +1,4 @@
-/.config/nvim/.netrwhist
-/.local/share/nvim/shada/
+/.config/nvim/*
+!/.config/nvim/init.vim
+/.local/share/nvim/*
+!/.local/share/nvim/site
