@@ -1,4 +1,5 @@
 {
 	"coc.preferences.currentFunctionSymbolAutoUpdate": true,
-	"coc.preferences.formatOnSaveFiletypes": ["go"]
+	"coc.preferences.formatOnSaveFiletypes": ["go"],
+	"eslint.autoFixOnSave": true
 }
