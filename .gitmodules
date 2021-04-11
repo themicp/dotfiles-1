@@ -1,5 +1,5 @@
 [submodule "neovim/.local/share/nvim/site/pack/molokai"]
-	path = neovim/.local/share/nvim/site/pack/shapeshed/start/molokai
+	path = neovim/.local/share/nvim/site/pack/shapeshed/opt/molokai
 	url = https://github.com/tomasr/molokai
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-sensible"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-sensible
@@ -27,7 +27,7 @@
 	url = https://github.com/neoclide/coc.nvim
 	branch = release
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/tender.vim"]
-	path = neovim/.local/share/nvim/site/pack/shapeshed/start/tender.vim
+	path = neovim/.local/share/nvim/site/pack/shapeshed/opt/tender.vim
 	url = https://github.com/jacoborus/tender.vim
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-airline"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-airline
@@ -39,8 +39,8 @@
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-colors-xcode"]
-	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-colors-xcode
+	path = neovim/.local/share/nvim/site/pack/shapeshed/opt/vim-colors-xcode
 	url = https://github.com/arzg/vim-colors-xcode
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/gruvbox"]
-	path = neovim/.local/share/nvim/site/pack/shapeshed/start/gruvbox
+	path = neovim/.local/share/nvim/site/pack/shapeshed/opt/gruvbox
 	url = https://github.com/morhetz/gruvbox
