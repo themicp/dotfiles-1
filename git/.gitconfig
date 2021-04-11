@@ -1,12 +1,10 @@
-[color]
-  ui = true
 [format]
   pretty = full
 [user]
   name = Kostis Karantias
   email = kkarantias@gmail.com
 [credential]
-  helper = cache --timeout=3600
+  helper = store
 [diff]
   renames = true
 [alias]
