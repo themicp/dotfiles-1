@@ -12,6 +12,10 @@ nnoremap <leader>ge :e $MYVIMRC<cr>
 set ignorecase
 set smartcase
 
+set showbreak=↪\ 
+set listchars=tab:\│\ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+set list
+
 nnoremap ; :
 vnoremap ; :
 
