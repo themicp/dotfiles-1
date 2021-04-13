@@ -44,3 +44,6 @@
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/gruvbox"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/opt/gruvbox
 	url = https://github.com/morhetz/gruvbox
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/rainbow_parentheses.vim"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/opt/rainbow_parentheses.vim
+	url = https://github.com/junegunn/rainbow_parentheses.vim
