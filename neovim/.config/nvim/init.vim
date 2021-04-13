@@ -1,6 +1,6 @@
+packadd gruvbox
 set termguicolors
 syntax enable
-packadd gruvbox
 colorscheme gruvbox
 set number
 set cursorline
