@@ -79,4 +79,4 @@ which nvim >/dev/null && {
 export EDITOR
 
 which direnv >/dev/null && eval "$(direnv hook bash)"
-[ -f /opt/local/etc/profile.d/autojump.sh ] && . /opt/local/etc/profile.d/autojump.sh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
