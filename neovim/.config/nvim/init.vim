@@ -17,6 +17,8 @@ set showbreak=↪\
 set listchars=tab:\│\ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 set list
 
+set ts=4 sw=4
+
 nnoremap ; :
 vnoremap ; :
 
