@@ -46,7 +46,8 @@ __prompt_command_fishlike() {
 	local BoldRed='\[\e[1;31m\]'
 	local Green='\[\e[0;32m\]'
 
-	PS1+="${Green}\u${Reset}@\h ${Green}\w${Reset}"
+	#PS1+="${Green}\u${Reset}@\h ${Green}\w${Reset}"
+	PS1+="${Green}\w${Reset}"
 	if [ ! -z "${gitShow}" ]; then
 		PS1+=" (${gitShow})"
 	fi
