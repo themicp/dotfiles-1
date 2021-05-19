@@ -1,7 +1,6 @@
-packadd gruvbox
 set termguicolors
 syntax enable
-colorscheme gruvbox
+colorscheme base16-monokai
 set number
 set cursorline
 
@@ -57,7 +56,7 @@ augroup tex_stuff
     autocmd FileType plaintex setl ft=tex
 augroup END
 
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 let g:coc_global_extensions = ['coc-go', 'coc-git', 'coc-json', 'coc-tsserver']
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
