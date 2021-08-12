@@ -62,12 +62,16 @@ alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
 
-PATH="$HOME/.config/yarn/global/node_modules/.bin/:$PATH"
-PATH="$HOME/go/bin:$PATH"
-PATH="$HOME/.bin:$PATH"
-PATH="/usr/local/sbin:$PATH"
-PATH="/opt/local/bin:$PATH"
-PATH="/usr/local/opt/ruby/bin:$PATH"
+function __include_in_path_if_exists() {
+	test -d $1 && PATH="$1:$PATH"
+}
+
+__include_in_path_if_exists "$HOME/.config/yarn/global/node_modules/.bin"
+__include_in_path_if_exists "$HOME/go/bin"
+__include_in_path_if_exists "$HOME/.bin"
+__include_in_path_if_exists "/usr/local/sbin"
+__include_in_path_if_exists "/usr/local/opt/ruby/bin"
+__include_in_path_if_exists "/usr/local/opt/coreutils/libexec/gnubin"
 export PATH
 
 set -o vi
@@ -81,3 +85,6 @@ export EDITOR
 
 which direnv >/dev/null && eval "$(direnv hook bash)"
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# need this for gpg to play well with pinentry
+export GPG_TTY=$(tty)
