@@ -1,6 +1,6 @@
 set termguicolors
 syntax enable
-colorscheme base16-monokai
+colorscheme base16-irblack
 set number
 set cursorline
 
