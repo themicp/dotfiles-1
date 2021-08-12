@@ -29,9 +29,6 @@
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-airline-themes"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/ctrlp.vim"]
-	path = neovim/.local/share/nvim/site/pack/shapeshed/start/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/rainbow_parentheses.vim"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/opt/rainbow_parentheses.vim
 	url = https://github.com/junegunn/rainbow_parentheses.vim
@@ -41,3 +38,6 @@
 [submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/base16-vim"]
 	path = neovim/.local/share/nvim/site/pack/shapeshed/start/base16-vim
 	url = https://github.com/chriskempson/base16-vim
+[submodule "neovim/.local/share/nvim/site/pack/shapeshed/start/vim-picker"]
+	path = neovim/.local/share/nvim/site/pack/shapeshed/start/vim-picker
+	url = https://github.com/srstevenson/vim-picker
